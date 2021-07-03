@@ -6,6 +6,12 @@
 
 """Tool for creating multi-resolution TFRecords datasets."""
 
+import os, sys
+file_path = 'additionalmodules/'
+DIR = os.path.dirname(__file__)
+sys.path.append(os.path.dirname(file_path))
+sys.path.append(os.path.join(DIR, './additionalmodules/PIL.egg'))
+
 # pylint: disable=too-many-lines
 import os
 import sys
